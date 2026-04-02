@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Выравнивание элементов</title>
+<style>
+.parent-center {
+    border: 1px solid red;
+}
+.child-center {
+    width: 100px;
+    height: 50px;
+    border: 1px solid green;
+    margin: 10px auto;
+}
+
+.parent-left-auto {
+    padding: 10px 0;
+    border: 1px solid red;
+}
+.child-left-auto {
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+    margin-left: auto;
+}
+
+.parent-right-auto {
+    padding: 10px 0;
+    border: 1px solid red;
+}
+.child-right-auto {
+    width: 200px;
+    height: 100px;
+    border: 1px solid green;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.parent-text-center {
+    padding: 10px 0;
+    border: 1px solid red;
+    text-align: center;
+}
+.child-text-center {
+    border: 1px solid green;
+}
+
+.parent-text-right {
+    padding: 10px 0;
+    border: 1px solid red;
+    text-align: right;
+}
+.child-text-right {
+    border: 1px solid green;
+}
+
+.parent-inline-block-center {
+    padding: 10px 0;
+    border: 1px solid red;
+    text-align: center;
+}
+.child-inline-block-center {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid green;
+    margin: 0 5px;
+}
+
+.parent-inline-block-right {
+    padding: 10px 0;
+    border: 1px solid red;
+    text-align: right;
+}
+.child-inline-block-right {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid green;
+}
+
+.child-inline-block-link {
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid green;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="parent-center">
+    <div class="child-center">1</div>
+    <div class="child-center">2</div>
+    <div class="child-center">3</div>
+</div>
+
+<div class="parent-left-auto">
+    <div class="child-left-auto"></div>
+</div>
+
+<div class="parent-right-auto">
+    <div class="child-right-auto"></div>
+</div>
+
+<div class="parent-text-center">
+    <a href="" class="child-text-center">ссылка 1</a>
+    <a href="" class="child-text-center">ссылка 2</a>
+    <a href="" class="child-text-center">ссылка 3</a>
+</div>
+
+<div class="parent-text-right">
+    <a href="" class="child-text-right">ссылка</a>
+</div>
+
+<div class="parent-inline-block-center">
+    <div class="child-inline-block-center">text 1</div>
+    <div class="child-inline-block-center">text 2</div>
+    <div class="child-inline-block-center">text 3</div>
+</div>
+
+<div class="parent-inline-block-right">
+    <div class="child-inline-block-right">text</div>
+</div>
+
+<div class="parent-inline-block-right">
+    <a href="" class="child-inline-block-link">text</a>
+</div>
+
+</body>
+</html>
